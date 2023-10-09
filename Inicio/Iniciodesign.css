@@ -1,0 +1,665 @@
+/* Principales */
+@import url('https://fonts.googleapis.com/css2?family=Mooli');
+
+#id{
+    background-color: #01A9DB;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.estadisticas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.h2{
+    text-align: center;
+    font-family: 'Mooli';
+    font-size: 35px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.p{
+    text-align: center; 
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.txt {
+    display: flex; 
+    align-items: center; 
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    width: 700px;
+    height: 400px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+
+.titulo h1{
+    font-family:"Mooli";
+    letter-spacing: 3px;
+    font-size: 90px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.titulo h2{
+    font-family:"Mooli";
+    letter-spacing: 3px;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+
+@media (max-width: 700px){
+    .p{
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 350px;
+        height: 200px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+
+}
+
+.barra-separacion {
+    border: none; 
+    border-radius: 30px;
+    height: 10px; 
+    background:linear-gradient(95deg, #0489B1, #01A9DB, #00FFFF, #00FFFF, #01A9DB, #0489B1);
+}
+
+/* Barra de menu */
+nav {
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    font-weight: bold;
+    background: whitesmoke;
+    z-index: 2;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    color: black;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+li a.activar, li a:hover{
+    transition: .3s;
+}
+
+section{
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+.x{
+    font-family: "Mooli";
+    font-size: 16px;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.x:hover{
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    color: white;
+    transform: scale(1.1);
+}
+
+.x:active{
+    background-color: #000101;
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+    transition: .3s;
+}
+
+.enlace img{
+    width: 35px;
+    height: 35px;
+    margin: 0px 0px 0px 9px;
+}
+
+.enlace h3{
+    font-family: "Mooli";
+    font-size: 10px;
+    color: black;
+}
+
+.enlace:hover{
+    transform: scale(1.2);
+}
+
+.enlace:active{
+    transform: scale(.8);
+}
+
+.logo{
+    height: 40px;
+}
+
+.checkBTN{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    transition: .3;
+}
+
+
+.checkBTN:hover{
+    color: #01A9DB;
+    transition: .3s;
+}
+
+.checkBTN:active{
+    color: #0489B1;
+    transition: .3s;
+    transform: scale(.8);
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .titulo h1{
+        font-family:"Mooli";
+        letter-spacing: 3px;
+        font-size: 80px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .titulo h2{
+        font-size: 30px;
+        font-family: "Mooli";
+        text-align: center;
+    }
+
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .titulo h1{
+        font-family:"Mooli";
+        letter-spacing: 3px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .titulo h2{
+        font-size: 25px;
+        font-family: "Mooli";
+        text-align: center;
+    }
+
+    .checkBTN{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: whitesmoke;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .3s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+.article{
+    padding: 40px;
+    margin: 40px;
+    flex: 1 1 25%;
+    background: #f5f5f5;
+    border-radius: 5px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.article img{
+    margin: 20px;
+}
+
+.article h2{
+    text-align: center;
+}
+
+.Informacion{
+    margin-top: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.Informacion button{
+    margin: 30px 20px 20px 20px;
+    height: 60px;
+    width: 350px;
+    border-radius: 10px;
+    border: transparent;
+    cursor: pointer;
+    background-color: #000101;
+    transition: .3s;
+    color: whitesmoke;
+    font-size: 20px;
+    color:whitesmoke;
+    letter-spacing: 3px;
+}
+
+.Informacion button:hover{
+    background-color: #1C1C1C;
+}
+
+.Informacion button:active{
+    transform: scale(.9);
+}
+
+.Informacion a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:whitesmoke;
+    letter-spacing: 3px;
+}
+
+/* Pie de pagina */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+@media (max-height:800px) {
+    .Informacion{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Informacion button{
+        margin: 0px 20px 10px 15px;
+        height: 60px;
+        width: 90%;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+        background-color: #000101;
+        transition: .3s;
+    }
+    
+    .Informacion button:hover{
+        background-color: #1C1C1C;
+    }
+    
+    .Informacion button:active{
+        transform: scale(.9);
+    }
+    
+    .Informacion a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color:whitesmoke;
+    }
+
+    .Informacion img{
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+.footer-distributed {
+    background-color: #2d2a30;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #01A9DB;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #01A9DB;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #01A9DB;
+}
+
+.footer-links a:hover {
+    color: #01A9DB;
+}
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+    background: #fff;
+    padding: 20px;
+}
+
+.container>.header, .container>.footer {
+    grid-column: 1/-1;
+    font-family: "Mooli";
+    background-color: #2d2a30;
+    border-radius: 15px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.container>.content {
+    grid-column: span 3;
+    grid-row: span 4;
+    background-color: #0489B1;
+    border-radius: 10px;
+}
+
+.content>.article {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;
+}
+
+.content .article h1{
+    padding: 10px;
+    font-family: "Mooli";
+}
+.content .article p {
+    padding: 10px;
+}
+
+.container>.sidebar {
+    grid-column: span 2;
+    grid-row: span 4;
+    border: transparent;
+    color: whitesmoke;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d2a30;
+    border-radius: 10px;
+}
+
+.container .sidebar img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+}
+
+.news-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+
+.news-image {
+width: 100%;
+max-height: 200px;
+object-fit: cover;
+}
+
+.news-content {
+padding: 20px;
+}
+
+.news-title {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.news-description {
+color: #555;
+}
+
+.news-date {
+margin-top: 10px;
+color: #888;
+font-size: 0.8rem;
+}
+
+@media (max-width: 700px){
+    .news-card {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .video {
+        width: 250px;
+        height: 200px;
+    }
+}
